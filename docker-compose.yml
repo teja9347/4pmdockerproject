@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: rahamshaik/moviesservice:latest
+    image: saiteja9573/movies:latest
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
   train:
-    image: rahamshaik/trainservice:latest
+    image: saiteja9573/train:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   dth:
-    image: rahamshaik/dthservice:latest
+    image: saiteja9573/dth:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: rahamshaik/rechargeservice:latest
+    image: saiteja9573/recharge:latest
     ports:
       - "83:80"
     deploy:
